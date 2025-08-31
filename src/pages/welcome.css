@@ -1,0 +1,87 @@
+/* Full-screen background with gradient */
+.welcome-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.welcome-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+.section {
+  background: rgba(0,0,0,0.5);
+  padding: 25px 40px;
+  border-radius: 15px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Section Headings */
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* Paragraph */
+.section p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+/* Signup button */
+.btn.signup {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
+.btn.signup:hover {
+  background-color: #ff6347;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Login button */
+.btn.login {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+.btn.login:hover {
+  background-color: #1e90ff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .welcome-container h1 {
+    font-size: 2.2rem;
+  }
+}

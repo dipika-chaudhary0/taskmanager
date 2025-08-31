@@ -1,0 +1,96 @@
+    /* AddTask.css */
+
+    /* Full page layout */
+    .add-task-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f5f7fa;
+    min-height: calc(100vh - 70px); /* adjust for top bar */
+    }
+
+    /* Card container */
+    .add-task-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .add-task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Card heading */
+    .add-task-card h2 {
+    margin-bottom: 30px;
+    color: #2575fc;
+    font-size: 1.8rem;
+    font-weight: bold;
+    }
+
+    /* Form elements */
+    .add-task-card form input,
+    .add-task-card form select,
+    .add-task-card form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* ensures consistent sizing */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .add-task-card form input:focus,
+    .add-task-card form select:focus,
+    .add-task-card form textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+    }
+
+    /* Button styling */
+    .add-task-card button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .add-task-card button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 500px) {
+    .add-task-card {
+        padding: 30px 20px;
+    }
+
+    .add-task-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .add-task-card form input,
+    .add-task-card form select,
+    .add-task-card form textarea,
+    .add-task-card button {
+        font-size: 1rem;
+    }
+    }
